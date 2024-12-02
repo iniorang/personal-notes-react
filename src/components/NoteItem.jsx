@@ -4,10 +4,10 @@ import DeleteButton from "./DeleteButton";
 import ArchiveButton from "./ArchiveButton";
 import UnarchiveButton from "./UnarchiveButton";
 
-function NoteItem({ id, title, createdAt, body, onDelete, onArchive, onUnarchive }) {
+function NoteItem({ title, createdAt, body }) {
   return (
     <div className="note-item">
-      <NoteItemBody title={title} createdAt={createdAt} body={body} />
+      <NoteItemBody title={title} body={body} createdAt={createdAt}  />
     </div>
   );
 }
