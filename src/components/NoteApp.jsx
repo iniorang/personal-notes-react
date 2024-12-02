@@ -15,12 +15,11 @@ class NoteApp extends React.Component {
             <div className="note-app">
                 <header className="note-app__header">
                     <h1>Note App</h1>
-                    <div className="note-search">
-
-                    </div>
                 </header>
                 <main className="note-app__body">
+                    <h2>Note Aktif</h2>
                     <NoteList notes={this.state.notes} />
+                    <h2>Arsip</h2>
                 </main>
 
             </div>
