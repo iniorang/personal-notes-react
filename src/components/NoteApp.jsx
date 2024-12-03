@@ -20,9 +20,10 @@ class NoteApp extends React.Component {
   }
 
   onArchiveHandler(id) {
-    const notes = this.state.notes.map((note) =>
-      note.id === id ? { ...NoteApp, archived: !note.archived } : note
+    const notes = this.state.notes.map(
+      (note) => (note.id === id ? { ...note, archived: !note.archived } : note) // Perbaikan pada ...note
     );
+    console.log(notes)
     this.setState({ notes });
   }
 
